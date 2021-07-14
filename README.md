@@ -6,7 +6,9 @@ Installation and Getting Started
     For building the jar file  - mvn clean package
     For building the docker image  - docker build --tag=addressbook-server:latest . 
 
-3. I have created a docker image for the spring boot application using the the Dockefile
+3. I have created a docker image for the spring boot application using the the Dockefile.
+    To download the image please click on the below url
+    https://rimibucket88.s3.amazonaws.com/addressbook-server.tar
     Please run the docker image using the below command to access the AddressBook Application
     
     docker run -p{any_port}:8080 addressbook-server:latest
