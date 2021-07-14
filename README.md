@@ -1,9 +1,15 @@
 Installation and Getting Started
 
-I have created a docker image for the spring boot application using the the Dockefile
-Please run the docker image using the below command to access the AddressBook Application
 
-docker run -p{any_port}:8080 addressbook-server:latest
+1. Clone the project and open a terminal at the root of the project.
+2. run the below commands
+    For building the jar file  - mvn clean package
+    For building the docker image  - docker build --tag=addressbook-server:latest . 
+
+3. I have created a docker image for the spring boot application using the the Dockefile
+    Please run the docker image using the below command to access the AddressBook Application
+    
+    docker run -p{any_port}:8080 addressbook-server:latest
 
 
 For accessing the REST API'server
