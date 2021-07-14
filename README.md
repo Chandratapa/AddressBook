@@ -3,9 +3,9 @@ Installation and Getting Started
 
 1. Clone the project and open a terminal at the root of the project.
 2. run the below commands
-    a. For building the jar file  - mvn clean package
-    b. For building the docker image  - docker-compose build 
-    c. Start the docker container using -  docker-compose up -d
+	1. For building the jar file  - mvn clean package
+	2. For building the docker image  - docker-compose build 
+    3. Start the docker container using -  docker-compose up -d
 
 3. I have already created a docker image for the application
     To download the image please click on the below url
