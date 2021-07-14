@@ -4,14 +4,14 @@ Installation and Getting Started
 1. Clone the project and open a terminal at the root of the project.
 2. run the below commands
     For building the jar file  - mvn clean package
-    For building the docker image  - docker build --tag=addressbook-server:latest . 
+    For building the docker image  - docker-compose build 
 
 3. I have created a docker image for the spring boot application using the the Dockefile.
     To download the image please click on the below url
     https://rimibucket88.s3.amazonaws.com/addressbook-server.tar
     Please run the docker image using the below command to access the AddressBook Application
     
-    docker run -p{any_port}:8080 addressbook-server:latest
+    Run the docker container using -  docker-compose up -d
 
 
 For accessing the REST API'server
