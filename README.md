@@ -22,7 +22,7 @@ For simplicity I have hard coded the username and password in application.proper
 2. We need to use the JWT token generated in step 1 to access the remaining api's whose description can be found  using the url
 http://localhost:{any_port}/swagger-ui.html
 
-I have also uploaded the postman collection in github  Reece.postman_collection.json
+I have also attached the postman collection in the email -  Reece.postman_collection.json
 Example for authorization header key- value is shown below
 Key = Authorization
 Value = Bearer jwttoken
