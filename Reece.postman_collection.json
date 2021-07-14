@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "66bfc342-9a2f-480a-8170-e5bd6452ea7f",
+		"name": "Reece",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add an address for a customer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTYyNjI0NjIyNCwiaWF0IjoxNjI2MjI4MjI0fQ.k81HrSzguwlgrPChKXRxCM2Qsu7wrmGqPRoLqVb7CHZ5uoHCnEPst4wjlUqYjEJAgGsJxB6qu_xcqS4gY9fnCw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerId\":1,\r\n    \"addName\":\"Rimi\",\r\n    \"phoneNumber\":\"0412245130\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http:\\\\localhost:8080/addressBook/addAddress",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addressBook",
+						"addAddress"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "JwtToken",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"javainuse\",\r\n    \"password\":\"$2a$10$slYQmyNdGzTn7ZLBXBChFOC9f6kFjAqPhccnP6DxlWXx2lPk1C3G6\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Address",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTYyNjI0NjIyNCwiaWF0IjoxNjI2MjI4MjI0fQ.k81HrSzguwlgrPChKXRxCM2Qsu7wrmGqPRoLqVb7CHZ5uoHCnEPst4wjlUqYjEJAgGsJxB6qu_xcqS4gY9fnCw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/addressBook/allAddresses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addressBook",
+						"allAddresses"
+					],
+					"query": [
+						{
+							"key": "Authrozation",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all the unique address by customer",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTYyNjI0NjIyNCwiaWF0IjoxNjI2MjI4MjI0fQ.k81HrSzguwlgrPChKXRxCM2Qsu7wrmGqPRoLqVb7CHZ5uoHCnEPst4wjlUqYjEJAgGsJxB6qu_xcqS4gY9fnCw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http:\\\\localhost:8080/addressBook/getAddressesByCustomerId/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addressBook",
+						"getAddressesByCustomerId",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a particular address for a customer",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTYyNjI0NjIyNCwiaWF0IjoxNjI2MjI4MjI0fQ.k81HrSzguwlgrPChKXRxCM2Qsu7wrmGqPRoLqVb7CHZ5uoHCnEPst4wjlUqYjEJAgGsJxB6qu_xcqS4gY9fnCw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http:\\\\localhost:8080/addressBook/deleteAddress/1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addressBook",
+						"deleteAddress",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
