@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  addressbook-springboot-container:
+    image: addressbook-server-docker-compose:1
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - /data/addressbook-springboot-container
+    ports:
+      - "8080:8080"
